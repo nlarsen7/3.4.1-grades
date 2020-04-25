@@ -1,3 +1,6 @@
+//Nicholas Larsen
+//4/25/2020
+//asks user for a number and outputs a grade depending on the number
 package main
 
 import "fmt"
@@ -17,10 +20,12 @@ func gradeD () {
 func gradeF () {
   fmt.Println("F")
 }
+//each function is a grade
 func main () {
 var num int
 fmt.Println("enter a number between 0-100")
 fmt.Scanln(&num)
+//scans number so we can decide what grade it is
 if num>=90{
   gradeA()
 }else if num>=80{
@@ -32,4 +37,5 @@ if num>=90{
 }else{
   gradeF()
 }
+//parameters that tell you what grade the number is and uses other functions to output the grade letter
 }
